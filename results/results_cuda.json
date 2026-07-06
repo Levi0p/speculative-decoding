@@ -1,0 +1,269 @@
+{
+  "config": {
+    "device": "cuda",
+    "draft_model": "gpt2",
+    "target_model": "gpt2-medium",
+    "max_new_tokens": 100,
+    "temperature": 0.8,
+    "default_gamma": 4
+  },
+  "summary": {
+    "gamma": 4,
+    "n_prompts": 20,
+    "mean_speedup": 1.1928,
+    "median_speedup": 0.8887,
+    "min_speedup": 0.2133,
+    "max_speedup": 7.5988,
+    "mean_acceptance_rate": 0.507835,
+    "mean_baseline_tokens_per_s": 52.726,
+    "mean_spec_tokens_per_s": 45.1115
+  },
+  "length_matched_subset": {
+    "note": "prompts 12 and 13 excluded: EOS was hit early on one side (base or spec) but not the other, so their raw time-ratio is not an apples-to-apples per-token comparison. See README 'Why mean and median disagree' section.",
+    "n_prompts": 18,
+    "mean_speedup": 0.8913,
+    "median_speedup": 0.8887,
+    "aggregate_tokens_per_s_ratio": 0.8808
+  },
+  "per_prompt": [
+    {
+      "id": 1,
+      "category": "factual_qa",
+      "prompt": "The capital of France is",
+      "baseline_time_s": 2.5954,
+      "baseline_tokens_per_s": 38.53,
+      "spec_time_s": 2.4476,
+      "spec_tokens_per_s": 40.86,
+      "speedup": 1.0604,
+      "acceptance_rate": 0.4
+    },
+    {
+      "id": 2,
+      "category": "factual_qa",
+      "prompt": "The largest planet in our solar system is",
+      "baseline_time_s": 1.7871,
+      "baseline_tokens_per_s": 55.96,
+      "spec_time_s": 2.0466,
+      "spec_tokens_per_s": 48.86,
+      "speedup": 0.8732,
+      "acceptance_rate": 0.5433
+    },
+    {
+      "id": 3,
+      "category": "factual_qa",
+      "prompt": "World War II ended in the year",
+      "baseline_time_s": 1.688,
+      "baseline_tokens_per_s": 59.24,
+      "spec_time_s": 2.035,
+      "spec_tokens_per_s": 49.14,
+      "speedup": 0.8295,
+      "acceptance_rate": 0.6577
+    },
+    {
+      "id": 4,
+      "category": "factual_qa",
+      "prompt": "The chemical symbol for gold is",
+      "baseline_time_s": 2.1006,
+      "baseline_tokens_per_s": 47.6,
+      "spec_time_s": 2.2693,
+      "spec_tokens_per_s": 44.07,
+      "speedup": 0.9257,
+      "acceptance_rate": 0.4345
+    },
+    {
+      "id": 5,
+      "category": "creative",
+      "prompt": "Once upon a time, in a small village nestled between two mountains,",
+      "baseline_time_s": 1.6945,
+      "baseline_tokens_per_s": 59.01,
+      "spec_time_s": 2.1946,
+      "spec_tokens_per_s": 45.57,
+      "speedup": 0.7721,
+      "acceptance_rate": 0.4604
+    },
+    {
+      "id": 6,
+      "category": "creative",
+      "prompt": "The old lighthouse keeper had seen many storms, but nothing like",
+      "baseline_time_s": 1.7007,
+      "baseline_tokens_per_s": 58.8,
+      "spec_time_s": 2.2563,
+      "spec_tokens_per_s": 44.32,
+      "speedup": 0.7538,
+      "acceptance_rate": 0.5391
+    },
+    {
+      "id": 7,
+      "category": "creative",
+      "prompt": "She opened the letter with trembling hands, not knowing that",
+      "baseline_time_s": 2.126,
+      "baseline_tokens_per_s": 47.04,
+      "spec_time_s": 1.9229,
+      "spec_tokens_per_s": 52.01,
+      "speedup": 1.1056,
+      "acceptance_rate": 0.6636
+    },
+    {
+      "id": 8,
+      "category": "creative",
+      "prompt": "The spaceship's engines hummed quietly as the crew prepared for",
+      "baseline_time_s": 1.745,
+      "baseline_tokens_per_s": 57.31,
+      "spec_time_s": 1.9298,
+      "spec_tokens_per_s": 51.82,
+      "speedup": 0.9042,
+      "acceptance_rate": 0.5917
+    },
+    {
+      "id": 9,
+      "category": "conversational",
+      "prompt": "Hey, do you think it's going to rain later? I was planning to",
+      "baseline_time_s": 1.7526,
+      "baseline_tokens_per_s": 57.06,
+      "spec_time_s": 2.412,
+      "spec_tokens_per_s": 41.46,
+      "speedup": 0.7266,
+      "acceptance_rate": 0.471
+    },
+    {
+      "id": 10,
+      "category": "conversational",
+      "prompt": "I've been thinking about switching careers lately because",
+      "baseline_time_s": 2.3104,
+      "baseline_tokens_per_s": 43.28,
+      "spec_time_s": 2.1804,
+      "spec_tokens_per_s": 45.86,
+      "speedup": 1.0596,
+      "acceptance_rate": 0.5038
+    },
+    {
+      "id": 11,
+      "category": "conversational",
+      "prompt": "My favorite way to spend a weekend is",
+      "baseline_time_s": 1.7689,
+      "baseline_tokens_per_s": 56.53,
+      "spec_time_s": 2.1247,
+      "spec_tokens_per_s": 47.07,
+      "speedup": 0.8325,
+      "acceptance_rate": 0.5076
+    },
+    {
+      "id": 12,
+      "category": "conversational",
+      "prompt": "Can you recommend a good book? I'm looking for something that",
+      "baseline_time_s": 0.4764,
+      "baseline_tokens_per_s": 56.68,
+      "spec_time_s": 2.2338,
+      "spec_tokens_per_s": 44.77,
+      "speedup": 0.2133,
+      "acceptance_rate": 0.4643,
+      "note": "length-mismatched: baseline hit EOS at ~27 tokens, speculative ran the full 100 -- raw speedup not apples-to-apples, excluded from length_matched_subset"
+    },
+    {
+      "id": 13,
+      "category": "reasoning",
+      "prompt": "If a train leaves the station at 60 miles per hour and travels for 3 hours, the total distance covered is",
+      "baseline_time_s": 1.9735,
+      "baseline_tokens_per_s": 50.67,
+      "spec_time_s": 0.2597,
+      "spec_tokens_per_s": 23.1,
+      "speedup": 7.5988,
+      "acceptance_rate": 0.25,
+      "note": "length-mismatched: speculative hit EOS at ~6 tokens, baseline ran the full 100 -- raw speedup not apples-to-apples, excluded from length_matched_subset"
+    },
+    {
+      "id": 14,
+      "category": "reasoning",
+      "prompt": "The main difference between a stack and a queue in computer science is",
+      "baseline_time_s": 2.2622,
+      "baseline_tokens_per_s": 44.2,
+      "spec_time_s": 2.3059,
+      "spec_tokens_per_s": 43.37,
+      "speedup": 0.9811,
+      "acceptance_rate": 0.4714
+    },
+    {
+      "id": 15,
+      "category": "reasoning",
+      "prompt": "To calculate the average of a list of numbers, you first",
+      "baseline_time_s": 1.7277,
+      "baseline_tokens_per_s": 57.88,
+      "spec_time_s": 1.8967,
+      "spec_tokens_per_s": 52.72,
+      "speedup": 0.9109,
+      "acceptance_rate": 0.6316
+    },
+    {
+      "id": 16,
+      "category": "reasoning",
+      "prompt": "The reason why ice floats on water is because",
+      "baseline_time_s": 1.7521,
+      "baseline_tokens_per_s": 57.07,
+      "spec_time_s": 2.337,
+      "spec_tokens_per_s": 42.79,
+      "speedup": 0.7497,
+      "acceptance_rate": 0.5271
+    },
+    {
+      "id": 17,
+      "category": "technical",
+      "prompt": "In machine learning, overfitting occurs when",
+      "baseline_time_s": 2.0623,
+      "baseline_tokens_per_s": 48.49,
+      "spec_time_s": 2.0624,
+      "spec_tokens_per_s": 48.49,
+      "speedup": 0.9999,
+      "acceptance_rate": 0.5231
+    },
+    {
+      "id": 18,
+      "category": "technical",
+      "prompt": "A REST API typically uses the following HTTP methods:",
+      "baseline_time_s": 1.7554,
+      "baseline_tokens_per_s": 56.97,
+      "spec_time_s": 1.882,
+      "spec_tokens_per_s": 53.14,
+      "speedup": 0.9327,
+      "acceptance_rate": 0.6228
+    },
+    {
+      "id": 19,
+      "category": "technical",
+      "prompt": "The difference between a compiler and an interpreter is",
+      "baseline_time_s": 1.7744,
+      "baseline_tokens_per_s": 56.36,
+      "spec_time_s": 2.262,
+      "spec_tokens_per_s": 44.21,
+      "speedup": 0.7844,
+      "acceptance_rate": 0.5317
+    },
+    {
+      "id": 20,
+      "category": "technical",
+      "prompt": "Version control systems like Git are useful because",
+      "baseline_time_s": 2.1815,
+      "baseline_tokens_per_s": 45.84,
+      "spec_time_s": 2.5908,
+      "spec_tokens_per_s": 38.6,
+      "speedup": 0.842,
+      "acceptance_rate": 0.362
+    }
+  ],
+  "gamma_sweep": [
+    {
+      "gamma": 2,
+      "mean_speedup": 0.9702118142409024,
+      "mean_acceptance_rate": 0.6877596351569613
+    },
+    {
+      "gamma": 4,
+      "mean_speedup": 0.8708546030862219,
+      "mean_acceptance_rate": 0.5362805859839762
+    },
+    {
+      "gamma": 8,
+      "mean_speedup": 0.6923574400516703,
+      "mean_acceptance_rate": 0.34745136903368096
+    }
+  ]
+}
