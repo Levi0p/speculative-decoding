@@ -12,7 +12,7 @@ def _sample(probs, generator):
 
 @torch.no_grad()
 def baseline_generate(model, tokenizer, prompt, max_new_tokens=100, temperature=0.8, seed=0, device="cpu"):
-    generator = torch.Generator().manual_seed(seed)
+    generator = torch.Generator(device=device).manual_seed(seed)
     model = model.to(device).eval()
     input_ids = tokenizer(prompt, return_tensors="pt").input_ids.to(device)
     prompt_len = input_ids.shape[1]

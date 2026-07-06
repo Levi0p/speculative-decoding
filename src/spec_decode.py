@@ -58,7 +58,7 @@ class SpeculativeDecoder:
 
     @torch.no_grad()
     def generate(self, prompt, max_new_tokens=100, seed=0):
-        generator = torch.Generator().manual_seed(seed)
+        generator = torch.Generator(device=self.device).manual_seed(seed)
         input_ids = self.tokenizer(prompt, return_tensors="pt").input_ids.to(self.device)
         prompt_ids = input_ids[0].tolist()
 
@@ -117,7 +117,7 @@ class SpeculativeDecoder:
                 p_i = p_dist[tok].item()
                 q_i = draft_dists[i][tok].item()
                 accept_prob = min(1.0, p_i / max(q_i, EPS))
-                if torch.rand(1, generator=generator).item() < accept_prob:
+                if torch.rand(1, generator=generator, device=self.device).item() < accept_prob:
                     accepted += 1
                 else:
                     residual = torch.clamp(p_dist - draft_dists[i], min=0.0)
