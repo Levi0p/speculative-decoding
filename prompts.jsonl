@@ -1,0 +1,20 @@
+{"id": 1, "category": "factual_qa", "prompt": "The capital of France is"}
+{"id": 2, "category": "factual_qa", "prompt": "The largest planet in our solar system is"}
+{"id": 3, "category": "factual_qa", "prompt": "World War II ended in the year"}
+{"id": 4, "category": "factual_qa", "prompt": "The chemical symbol for gold is"}
+{"id": 5, "category": "creative", "prompt": "Once upon a time, in a small village nestled between two mountains,"}
+{"id": 6, "category": "creative", "prompt": "The old lighthouse keeper had seen many storms, but nothing like"}
+{"id": 7, "category": "creative", "prompt": "She opened the letter with trembling hands, not knowing that"}
+{"id": 8, "category": "creative", "prompt": "The spaceship's engines hummed quietly as the crew prepared for"}
+{"id": 9, "category": "conversational", "prompt": "Hey, do you think it's going to rain later? I was planning to"}
+{"id": 10, "category": "conversational", "prompt": "I've been thinking about switching careers lately because"}
+{"id": 11, "category": "conversational", "prompt": "My favorite way to spend a weekend is"}
+{"id": 12, "category": "conversational", "prompt": "Can you recommend a good book? I'm looking for something that"}
+{"id": 13, "category": "reasoning", "prompt": "If a train leaves the station at 60 miles per hour and travels for 3 hours, the total distance covered is"}
+{"id": 14, "category": "reasoning", "prompt": "The main difference between a stack and a queue in computer science is"}
+{"id": 15, "category": "reasoning", "prompt": "To calculate the average of a list of numbers, you first"}
+{"id": 16, "category": "reasoning", "prompt": "The reason why ice floats on water is because"}
+{"id": 17, "category": "technical", "prompt": "In machine learning, overfitting occurs when"}
+{"id": 18, "category": "technical", "prompt": "A REST API typically uses the following HTTP methods:"}
+{"id": 19, "category": "technical", "prompt": "The difference between a compiler and an interpreter is"}
+{"id": 20, "category": "technical", "prompt": "Version control systems like Git are useful because"}

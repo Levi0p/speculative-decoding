@@ -1,0 +1,259 @@
+{
+  "config": {
+    "draft_model": "gpt2",
+    "target_model": "gpt2-medium",
+    "max_new_tokens": 100,
+    "temperature": 0.8,
+    "default_gamma": 4
+  },
+  "summary": {
+    "gamma": 4,
+    "n_prompts": 20,
+    "mean_speedup": 0.678385,
+    "median_speedup": 0.6711,
+    "min_speedup": 0.3675,
+    "max_speedup": 0.902,
+    "mean_acceptance_rate": 0.509815,
+    "mean_baseline_tokens_per_s": 18.3035,
+    "mean_spec_tokens_per_s": 12.554
+  },
+  "per_prompt": [
+    {
+      "id": 1,
+      "category": "factual_qa",
+      "prompt": "The capital of France is",
+      "baseline_time_s": 5.3984,
+      "baseline_tokens_per_s": 18.52,
+      "spec_time_s": 8.448,
+      "spec_tokens_per_s": 11.84,
+      "speedup": 0.639,
+      "acceptance_rate": 0.5234
+    },
+    {
+      "id": 2,
+      "category": "factual_qa",
+      "prompt": "The largest planet in our solar system is",
+      "baseline_time_s": 5.0316,
+      "baseline_tokens_per_s": 19.87,
+      "spec_time_s": 6.7258,
+      "spec_tokens_per_s": 14.87,
+      "speedup": 0.7481,
+      "acceptance_rate": 0.5917
+    },
+    {
+      "id": 3,
+      "category": "factual_qa",
+      "prompt": "World War II ended in the year",
+      "baseline_time_s": 5.6219,
+      "baseline_tokens_per_s": 17.79,
+      "spec_time_s": 6.2327,
+      "spec_tokens_per_s": 16.04,
+      "speedup": 0.902,
+      "acceptance_rate": 0.6981
+    },
+    {
+      "id": 4,
+      "category": "factual_qa",
+      "prompt": "The chemical symbol for gold is",
+      "baseline_time_s": 5.8889,
+      "baseline_tokens_per_s": 16.98,
+      "spec_time_s": 7.7968,
+      "spec_tokens_per_s": 12.83,
+      "speedup": 0.7553,
+      "acceptance_rate": 0.4926
+    },
+    {
+      "id": 5,
+      "category": "creative",
+      "prompt": "Once upon a time, in a small village nestled between two mountains,",
+      "baseline_time_s": 6.4405,
+      "baseline_tokens_per_s": 15.53,
+      "spec_time_s": 9.5223,
+      "spec_tokens_per_s": 10.5,
+      "speedup": 0.6764,
+      "acceptance_rate": 0.4926
+    },
+    {
+      "id": 6,
+      "category": "creative",
+      "prompt": "The old lighthouse keeper had seen many storms, but nothing like",
+      "baseline_time_s": 7.8115,
+      "baseline_tokens_per_s": 12.8,
+      "spec_time_s": 10.3824,
+      "spec_tokens_per_s": 9.63,
+      "speedup": 0.7524,
+      "acceptance_rate": 0.3512
+    },
+    {
+      "id": 7,
+      "category": "creative",
+      "prompt": "She opened the letter with trembling hands, not knowing that",
+      "baseline_time_s": 5.5714,
+      "baseline_tokens_per_s": 17.95,
+      "spec_time_s": 8.5795,
+      "spec_tokens_per_s": 11.66,
+      "speedup": 0.6494,
+      "acceptance_rate": 0.5154
+    },
+    {
+      "id": 8,
+      "category": "creative",
+      "prompt": "The spaceship's engines hummed quietly as the crew prepared for",
+      "baseline_time_s": 5.2597,
+      "baseline_tokens_per_s": 19.01,
+      "spec_time_s": 7.6105,
+      "spec_tokens_per_s": 13.14,
+      "speedup": 0.6911,
+      "acceptance_rate": 0.6017
+    },
+    {
+      "id": 9,
+      "category": "conversational",
+      "prompt": "Hey, do you think it's going to rain later? I was planning to",
+      "baseline_time_s": 5.2058,
+      "baseline_tokens_per_s": 19.21,
+      "spec_time_s": 6.9435,
+      "spec_tokens_per_s": 14.4,
+      "speedup": 0.7497,
+      "acceptance_rate": 0.5785
+    },
+    {
+      "id": 10,
+      "category": "conversational",
+      "prompt": "I've been thinking about switching careers lately because",
+      "baseline_time_s": 7.2271,
+      "baseline_tokens_per_s": 13.84,
+      "spec_time_s": 9.902,
+      "spec_tokens_per_s": 10.1,
+      "speedup": 0.7299,
+      "acceptance_rate": 0.5152
+    },
+    {
+      "id": 11,
+      "category": "conversational",
+      "prompt": "My favorite way to spend a weekend is",
+      "baseline_time_s": 4.977,
+      "baseline_tokens_per_s": 20.09,
+      "spec_time_s": 8.1212,
+      "spec_tokens_per_s": 12.31,
+      "speedup": 0.6128,
+      "acceptance_rate": 0.4414
+    },
+    {
+      "id": 12,
+      "category": "conversational",
+      "prompt": "Can you recommend a good book? I'm looking for something that",
+      "baseline_time_s": 5.3076,
+      "baseline_tokens_per_s": 18.84,
+      "spec_time_s": 6.931,
+      "spec_tokens_per_s": 14.43,
+      "speedup": 0.7658,
+      "acceptance_rate": 0.5691
+    },
+    {
+      "id": 13,
+      "category": "reasoning",
+      "prompt": "If a train leaves the station at 60 miles per hour and travels for 3 hours, the total distance covered is",
+      "baseline_time_s": 5.153,
+      "baseline_tokens_per_s": 19.41,
+      "spec_time_s": 12.1638,
+      "spec_tokens_per_s": 8.22,
+      "speedup": 0.4236,
+      "acceptance_rate": 0.4354
+    },
+    {
+      "id": 14,
+      "category": "reasoning",
+      "prompt": "The main difference between a stack and a queue in computer science is",
+      "baseline_time_s": 5.8601,
+      "baseline_tokens_per_s": 17.06,
+      "spec_time_s": 6.5222,
+      "spec_tokens_per_s": 15.33,
+      "speedup": 0.8985,
+      "acceptance_rate": 0.6429
+    },
+    {
+      "id": 15,
+      "category": "reasoning",
+      "prompt": "To calculate the average of a list of numbers, you first",
+      "baseline_time_s": 5.3804,
+      "baseline_tokens_per_s": 18.59,
+      "spec_time_s": 8.4144,
+      "spec_tokens_per_s": 11.88,
+      "speedup": 0.6394,
+      "acceptance_rate": 0.4315
+    },
+    {
+      "id": 16,
+      "category": "reasoning",
+      "prompt": "The reason why ice floats on water is because",
+      "baseline_time_s": 5.0038,
+      "baseline_tokens_per_s": 19.98,
+      "spec_time_s": 7.6366,
+      "spec_tokens_per_s": 13.09,
+      "speedup": 0.6552,
+      "acceptance_rate": 0.5038
+    },
+    {
+      "id": 17,
+      "category": "technical",
+      "prompt": "In machine learning, overfitting occurs when",
+      "baseline_time_s": 5.2326,
+      "baseline_tokens_per_s": 19.11,
+      "spec_time_s": 7.8588,
+      "spec_tokens_per_s": 12.72,
+      "speedup": 0.6658,
+      "acceptance_rate": 0.4963
+    },
+    {
+      "id": 18,
+      "category": "technical",
+      "prompt": "A REST API typically uses the following HTTP methods:",
+      "baseline_time_s": 4.8996,
+      "baseline_tokens_per_s": 20.41,
+      "spec_time_s": 7.837,
+      "spec_tokens_per_s": 12.76,
+      "speedup": 0.6252,
+      "acceptance_rate": 0.4514
+    },
+    {
+      "id": 19,
+      "category": "technical",
+      "prompt": "The difference between a compiler and an interpreter is",
+      "baseline_time_s": 2.8938,
+      "baseline_tokens_per_s": 20.73,
+      "spec_time_s": 7.8738,
+      "spec_tokens_per_s": 12.7,
+      "speedup": 0.3675,
+      "acceptance_rate": 0.4257
+    },
+    {
+      "id": 20,
+      "category": "technical",
+      "prompt": "Version control systems like Git are useful because",
+      "baseline_time_s": 4.9149,
+      "baseline_tokens_per_s": 20.35,
+      "spec_time_s": 7.9201,
+      "spec_tokens_per_s": 12.63,
+      "speedup": 0.6206,
+      "acceptance_rate": 0.4384
+    }
+  ],
+  "gamma_sweep": [
+    {
+      "gamma": 2,
+      "mean_speedup": 0.7242196248824968,
+      "mean_acceptance_rate": 0.6636388657710978
+    },
+    {
+      "gamma": 4,
+      "mean_speedup": 0.7772328900728993,
+      "mean_acceptance_rate": 0.533347687336278
+    },
+    {
+      "gamma": 8,
+      "mean_speedup": 0.7275160128849173,
+      "mean_acceptance_rate": 0.3330689578244955
+    }
+  ]
+}

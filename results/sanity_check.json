@@ -1,0 +1,10 @@
+{
+  "mean_acceptance_rate": 1.0,
+  "per_prompt": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "passed": true
+}
